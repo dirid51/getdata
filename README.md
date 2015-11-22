@@ -81,6 +81,7 @@ fBodyBodyGyroJerkMag-std() | FastFourierStdDevBodyAngularVelocityJerkMagnitude
 
 ==> **NOTE:** The variables 'person' and 'activity' were added to this list and kept those names throughout the rest of the script's processing.
 
+The tidy data set variable names are identical to the values in the new variable column, with the one addition that each variable name has had "Mean" appended to it.
 
-### List of Variable Names as Used in the Tidy Data Set
-
+#### Variable selection
+Part of the script's processing includes selecting out a subset of the variables to keep and "throwing away" the rest, so to speak. The columns that were selected were those that specifically had '-mean()-' or '-std()-' in their name. It was decided that there was less ambiguity in selecting those variables because they were undeniably labeled as being the result of a mean or standard deviation function.
